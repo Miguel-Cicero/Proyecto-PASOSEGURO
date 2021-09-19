@@ -1,0 +1,59 @@
+footer {
+	padding: 2%;
+	background-color: white;
+	display: inline-flex;
+	bottom: 0px;
+	width: 100%;
+}
+
+#ftitulo {
+	font-family: Century Gothic;
+	font-size: 1.5vw;
+}
+
+#columnas3	{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.columnas {
+	width: 25%;
+	font-size: 1.4vw;
+	font-family: Century Gothic;
+}
+
+.txtatajos	{
+	line-height: 5vw;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+
+
+	#ftitulo {
+		display: none;
+	}
+
+	#columnas3	{
+		display: inline-grid;
+	}
+
+	.columnas {
+		font-size: 5vw;
+		justify-content: center;
+	}
+
+	.txtatajos	{
+		line-height: 9vw;
+		white-space: nowrap;
+	}
+
+	#piedepagina {
+		font-size: 3vw;
+	}
+}
+
+#piedepagina {
+	background-color: violet;
+	padding: 1%;
+}

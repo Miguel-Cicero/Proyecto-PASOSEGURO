@@ -1,0 +1,112 @@
+* {
+	margin: 0px;
+	padding:0px;
+}
+
+body 
+{
+	background-attachment: fixed;
+	background-image: url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+#titulo 
+{
+	font-size: 10vw;
+	color: white;
+	font-family: Century Gothic;
+	font-weight: bold;
+    margin-left: 5%;
+    float: left;
+}
+
+#portada {
+	width: 900px;
+	display: inline;
+}
+
+#imgintro {
+	height: 27vw;
+}
+
+.imgarticulo {
+	border-radius: 50%;
+	filter: grayscale(100%);
+	margin-bottom: 5%;
+}
+
+#subarticulos {
+	font-family: Century Gothic;
+	background-color: white;
+	display: inline-flex;
+	width: 100%;
+}
+
+.articulo {
+	padding: 1%;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.articulo:hover {
+	box-shadow: 0 8px 20px rgba(255, 30, 255, 4);
+  	transition: all 0.4s ease;
+	background-color: #8514B4;
+	color: white;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+	
+	#titulo {
+		font-size: 20vw;
+	}
+
+	#imgintro {
+		height: 50vw;
+	}
+
+	#subarticulos {
+		display: inline-block;
+	}
+}
+
+.contenidos {
+	box-shadow: 0 10px 15px rgba(255, 30, 255, 4);
+  	transition: all 0.4s ease;
+	background-color: rgba(0,0,0,0.4);
+	margin: 2%;
+	width: 40%;
+	float: left;
+	font-family: Century Gothic;
+	border-radius: 50px;
+	padding: 2%;
+	justify-content: center;
+	font-size: 2vw;
+	display: flex;
+}
+
+.titucontenido {
+	text-decoration: none;
+}
+
+.contenidos:hover {
+	box-shadow: 0 2px 30px rgba(255, 255, 255, 9);
+  	transition: all 0.4s ease;
+  	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) and (min-width: 300px) {
+	.contenidos {
+		width: 80%;
+		margin: 5%;
+		font-size: 3vw;
+		padding: 4%;
+	}
+}
